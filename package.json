@@ -1,5 +1,5 @@
 {
-  "name": "speak",
+  "name": "robospeak",
   "version": "1.0.0",
   "description": "TTS abstraction that works on linux and mac",
   "main": "index.js",
