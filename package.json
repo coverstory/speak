@@ -1,0 +1,27 @@
+{
+  "name": "speak",
+  "version": "1.0.0",
+  "description": "TTS abstraction that works on linux and mac",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coverstory/speak.git"
+  },
+  "keywords": [
+    "tts",
+    "speach",
+    "mac",
+    "linux",
+    "voice",
+    "talk"
+  ],
+  "author": "Aaron O'Mullan <aaron.omullan@gmail.com>",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/coverstory/speak/issues"
+  },
+  "homepage": "https://github.com/coverstory/speak#readme"
+}
