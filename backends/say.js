@@ -23,6 +23,10 @@ Say.prototype.play = function(cb) {
         this.msg,
     ]);
 
+    // Handle exit
+    say.once('close', cb);
+
+    // Write message
     say.stdin.write(this.msg);
     say.stdin.end();
 };
@@ -35,6 +39,10 @@ Say.prototype.save = function(filename, cb) {
         this.msg,
     ]);
 
+    // Handle exit
+    say.once('close', cb);
+
+    // Write message
     say.stdin.write(this.msg);
     say.stdin.end();
 };

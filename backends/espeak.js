@@ -23,6 +23,10 @@ Espeak.prototype.play = function(cb) {
         '-v', this.options.voice
     ]);
 
+    // Handle exit
+    say.once('close', cb);
+
+    // Write message
     say.stdin.write(this.msg);
     say.stdin.end();
 };
@@ -35,6 +39,10 @@ Espeak.prototype.save = function(filename, cb) {
         '-w', filename
     ]);
 
+    // Handle exit
+    say.once('close', cb);
+
+    // Write message
     say.stdin.write(this.msg);
     say.stdin.end();
 };
