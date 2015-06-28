@@ -1,8 +1,99 @@
+html{
+	height: 100%;
+}
+
 body{
-	background-color: #F18052;
 	color: #FFF;
+	text-align: center;
+	text-shadow:1px 2px 2px rgba(0,0,0,0.24);
+	width: 100%;
+  	height: 100%;
+	background: #f2b950;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(130,37,47,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(130,37,47,.25) 0%, rgba(242,153,75,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
 }
 
 header{
 	text-align: center;
 }
+
+header img{
+	width: 90px;
+	margin-top: -5px;
+}
+
+header h1{
+	display: inline-table;
+	vertical-align: text-bottom;
+}
+
+p{
+	font-size: 2.4em;
+}
+
+#books-showcase{
+	width:100%;
+}
+
+.book{
+	width: 18%;
+	display: inline-table;
+}
+
+.book img{
+	z-index: 9;
+    text-align: center;
+    width: 100%;
+}
+
+#books-showcase .book:nth-child(2){
+	padding-left: 40px;
+	padding-right: 40px;
+	background-size:cover;
+overflow:hidden;
+}
+
+#overlay{
+	/*background: url('http://cdn1.iconfinder.com/data/icons/iconslandplayer/PNG/64x64/CircleBlue/Play1Pressed.png') center center no-repeat;*/
+    margin: -90% 0 0 0;
+    position: relative;
+    z-index: 10;
+}
+
+.fa{
+	text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/*.book:hover{
+	-webkit-filter: brightness(50%);
+	filter: brightness(50%); 
+}
+
+.book:hover i{
+	-webkit-filter: brightness(100%);
+	filter: brightness(100%);
+}*/
+
+
+#overlay{  
+	background:rgba(0,0,0,.75);
+    text-align:center;
+    padding:45px 0 66px 0;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+.book:hover #overlay{
+    opacity:1;
+}
+
+#play{  
+	font-family:Helvetica;
+    font-weight:900;
+    color:rgba(255,255,255,.85);
+    font-size:96px;
+}
+
