@@ -81,9 +81,9 @@ overflow:hidden;
 #overlay{  
 	background:rgba(0,0,0,.75);
     text-align:center;
-    padding:58.2% 0;
+    padding:57.5% 0;
     opacity:0;
-    margin-top: -150.5%;
+    margin-top: -353px;
     -webkit-transition: opacity .25s ease;
 -moz-transition: opacity .25s ease;}
 
