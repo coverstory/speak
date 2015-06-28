@@ -98,3 +98,13 @@ overflow:hidden;
     font-size:96px;
 }
 
+.book a{
+	color:#FFF;
+}
+
+.dropbox-saver{
+	display: block;
+	opacity: 1;
+	margin-top: 20px;
+	color:#4F4F4F !important;
+}
